@@ -92,7 +92,7 @@ left join suspect s on c.crimeid = s.crimeid;
 
 --Quetion 15: Find incidents where the suspect is older than any victim.
 
-select distinct c.* from crime c
+select c.* from crime c
 join suspect s on c.crimeid = s.crimeid
 join victim v on c.crimeid = v.crimeid where s.age > v.age;
 
